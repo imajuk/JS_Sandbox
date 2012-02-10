@@ -1,0 +1,179 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Kameron' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Uncial+Antiqua' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Plaster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Monsieur+La+Doulaise' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header id="mainVisual">
+        <img src="img/BuildingBlocks_typeface.png">
+        <a href="#Serif" id="go"></a>
+    </header>
+    <nav id="navi" class="header">
+        <ul>
+            <li id="link_serif"       class="item_color_default normal_serif"><a href="#Serif" class="baseline2">Serif</a>
+            <li id="link_sans"        class="item_color_default normal_sans"><a href="#Sans">Sans-Serif</a>
+            <li id="link_display"     class="item_color_default normal_display"><a href="#Display">Display</a>
+            <li id="link_handwriting" class="item_color_default normal_handwriting"><a href="#Handwriting">Handwriting</a>
+        </ul>
+    </nav>
+    <div id="main" role="main">
+        <section id="Serif" class="normal_serif">
+            <hgroup id="head_serif" class="header" data-highlight="link_serif">
+                <h1>Serif</h1>
+            </hgroup>
+            <div id="serif_kameron" class="sample">
+                <div class="caption">Kameron, 2 Styles by Vernon Adams</div>
+            </div>
+            <div id="serif_droid" class="sample">
+                <div class="caption">Droid Serif, 4 Styles by Steve Matteson</div>
+            </div>
+            <div id="serif_josefin" class="sample">
+                <div class="caption">Josefin Slab, 10 Styles by Santiago Orozco</div>
+            </div>
+            <div id="serif_tinos" class="sample">
+                <div class="caption">Tinos, 4 Styles by Steve Matteson</div>
+            </div>
+        </section>
+        <section id="Sans" class="normal_sans">
+            <hgroup id="head_sans" class="header" data-highlight="link_sans">
+                <h1>Sans-Serif</h1>
+            </hgroup>
+            <div id="sans_opensans" class="sample">
+                <div class="caption">Open Sans, 10 Styles by Steve Matteson</div>
+            </div>
+            <div id="sans_quicksans" class="sample">
+                <div class="caption">Quicksand, 3 Styles by Andrew Paglinawan</div>
+            </div>
+            <div id="sans_anton" class="sample">
+                <div class="caption">Anton, 1 Style by Vernon Adams</div>
+            </div>
+            <div id="sans_antic" class="sample">
+                <div class="caption">Antic, 1 Style by Santiago Orozco</div>
+            </div>
+        </section>
+        <section id="Display" class="normal_display">
+            <hgroup id="head_display" class="header" data-highlight="link_display">
+                <h1>Display</h1>
+            </hgroup>
+            <div id="display_antiqua" class="sample">
+                <div class="caption">Uncial Antiqua, 1 Style by Astigmatic</div>
+            </div>
+            <div id="display_cyreal" class="sample">
+                <div class="caption">Baumans, 1 Style by Cyreal</div>
+            </div>
+            <div id="display_nosifer" class="sample">
+                <div class="caption">Nosifer, 1 Style by Typomondo</div>
+            </div>
+            <div id="display_plaster" class="sample">
+                <div class="caption">Plaster, 1 Style by Eben Sorkin</div>
+            </div>
+        </section>
+        <section id="Handwriting" class="normal_handwriting">
+            <hgroup id="head_handwriting" class="header" data-highlight="link_handwriting">
+                <h1>Handwriting</h1>
+            </hgroup>
+            <div id="handwriting_arizona" class="sample">
+                <div class="caption">Arizonia, 1 Style by TypeSETit</div>
+            </div>
+            <div id="handwriting_sugiyama" class="sample">
+                <div class="caption">Dr Sugiyama, 1 Style by Sudtipos</div>
+            </div>
+            <div id="handwriting_monsieur" class="sample">
+                <div class="caption">Monsieur La Doulaise, 1 Style by Sudtipos</div>
+            </div>
+            <div id="handwriting_sunrise" class="sample">
+                <div class="caption">Waiting for the Sunrise, 1 Style by Kimberly Geswein</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        (c)xxxxx all rights reserved.
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/mylibs/jquery.scrollToAnchor.js"></script>
+  <script defer src="js/mylibs/jquery.accordion_header.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <!-- 
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+   -->
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

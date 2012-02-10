@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#top" class="navLink">Top</a>
+            <li><a href="#about" class="navLink">What is HTML5?</a>
+            <li><a href="#how" class="navLink">How Did HTML5 Get Started?</a>
+        </ul>
+    </nav>
+
+    <!--
+        to define page element use 'data-script' attribute.
+    -->
+    <article id="top" data-script="FoldingScroll">
+        <h1>HTML5</h1>
+    </article>
+    
+    
+    <article id="about" data-script="FoldingScroll">
+
+        <h1>What is HTML5?</h1>
+
+        <p>HTML5 will be the new standard for HTML, XHTML, and the HTML DOM. The previous version of HTML came in
+            1999. The web has changed a lot since then. HTML5 is still a work in progress. However, most modern browsers
+            have some HTML5 support.
+        <!--
+            notes: page is required the value of own height, so children of page should make sure it's size.
+                   omitting 'height' property might cause problem.
+        -->
+        <figure id="fig1" data-script="FoldingScroll">
+            <img src="img/fig0.png" width="512" height="512">
+            <img src="img/fig1.jpg" width="529" height="343">
+            <img src="img/fig2.png" width="600" height="675">
+            <img src="img/fig3.jpg" width="400" height="384">
+        </figure>
+        <!-- 
+            <figure id="fig2" data-script="FoldingScroll">
+                <img src="img/fig0.png" width="512" height="512">
+                <img src="img/fig1.jpg" width="529" height="343">
+                <img src="img/fig2.png" width="600" height="675">
+                <img src="img/fig3.jpg" width="400" height="384">
+            </figure>
+         -->
+
+    </article>
+
+
+    <article id="how" data-script="FoldingScroll">
+
+        <h1>How Did HTML5 Get Started?</h1>
+
+        <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application
+            Technology Working Group (WHATWG). WHATWG was working with web forms and applications, and W3C was working
+            with XHTML 2.0. In 2006, they decided to cooperate and create a new version of HTML.
+            
+    </article>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="jquery.easing.1.3.js"></script>
+    <script src="jquery.ba-hashchange.min.js"></script>
+    <script src="jquery.foldingScroll.js"></script>
+    <script src="jquery.scrollToAnchor.js"></script>
+    <script type="text/javascript">
+        $('.navLink').scrollToAnchor({useFoldingScroll:true});
+    </script>
+
+</body>
+</html>
